@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWO COLUMNS: TEXT AND IMAGE SIDE BY SIDE</title>
+  </head>
+  <body>
+
+    <style>
+        .hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background: #ddd;
+}
+
+.text {
+  flex: 2;
+  padding: 20px;
+}
+
+.image {
+  flex: 1;
+  padding: 20px;
+  background: #bbb;
+  text-align: center;
+}
+
+    </style>
+
+    <div class="hero">
+        <div class="text">Welcome to my site!</div>
+        <div class="image">[image]</div>
+    </div>      
+  </body>
+</html>

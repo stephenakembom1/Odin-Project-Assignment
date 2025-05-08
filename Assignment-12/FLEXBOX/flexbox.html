@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+  </head>
+  <body>
+    <style>
+      .container {
+  display: flex;
+  justify-content: end; /* spreads them horizontally */
+  align-items: start; /* aligns them vertically */
+  height: 150px;
+  gap: 30px;
+  background-color:lightblue;
+  padding: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.box {
+  width: 100px;
+  height: 50px;
+  background-color: steelblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box1 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.container2 {
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items:center; /* puts all boxes in the center horizontally */
+  height: 150px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.container3 {
+  background-color: lightsalmon;
+  height: 150px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items:center;
+  margin-bottom: 60px;
+  
+}
+.container4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.ban {
+  width: 100px;
+  height: 50px;
+  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+     </style>
+
+    <div class="container">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+    </div>    
+
+    <div class="container2">
+      <div class="ban">Box 1</div>
+      <div class="ban">Box 2</div>
+
+      <div class="box1">
+       <div class="ban">Box 3</div>
+       <div class="ban">Box cc</div>
+       <div class="ban">Box bb</div>
+      </div>
+
+    </div>
+
+    <div class="container3">
+      <div class="box">Box A</div>
+      <div class="box">Box B</div>
+      <div class="box">Box C</div>
+    </div>
+
+    <div class="container4">
+      <div class="box">Box d</div>
+      <div class="box">Box e</div>
+      <div class="box">Box f</div>
+    </div>        
+  </body>
+</html>
